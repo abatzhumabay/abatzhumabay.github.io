@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+    .wrapper {
+        height: fit-content;
+        display: flex;
+        column-gap: 40px;
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+
+            .section {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+            }
+
+            .section input {
+                width: 300px;
+                height: 30px;
+                padding: 4px 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .section button {
+                padding: 10px 10px;
+                font-size: 16px;
+                background-color: #4caf50;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            .section button:hover {
+                background-color: #45a049;
+            }
+        }
+
+        .response-container {
+            height: 100%;
+        }
+
+        .response-container textarea{
+            padding: 10px;
+            width: 400px;
+            height: 500px;
+            resize: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    }
+}

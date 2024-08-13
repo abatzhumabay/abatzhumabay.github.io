@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green-API Integration</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="form-container">
+            <div class="section">
+                <input type="text" id="idInstance" placeholder="idInstance">
+                <input type="text" id="ApiTokenInstance" placeholder="ApiTokenInstance">
+                <button onclick="getSettings()">getSettings</button>
+                <button onclick="getStateInstance()">getStateInstance</button>
+            </div>
+            <div class="section">
+                <input type="text" id="chatIdMessage" placeholder="Введите chatId">
+                <input type="text" id="message" placeholders="Введите сообщение">
+                <button onclick="sendMessage()">sendMessage</button>
+            </div>
+            <div class="section">
+                <input type="text" id="chatIdFile" placeholder="Введите chatId">
+                <input type="text" id="urlFile" placeholder="Введите URL файла">
+                <button onclick="sendFileByUrl()">sendFileByUrl</button>
+            </div>
+        </div>
+        <div class="response-container">
+            <textarea id="response" readonly placeholder="Ответ методов будет отображаться здесь"></textarea>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
